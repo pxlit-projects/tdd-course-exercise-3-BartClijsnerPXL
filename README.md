@@ -1,6 +1,8 @@
 
 # TDD Lab Exercise 3
 
+Oefeningen voor http://wgroeneveld.github.io/tdd-course
+
 ## Technologie
 
 In Java. Test Harnas met [JUnit](https://github.com/junit-team/junit4/wiki/Getting-started). Assertions met [AssertJ](http://joel-costigliola.github.io/assertj/).
