@@ -1,0 +1,24 @@
+group 'be.pxl'
+version '1.0-SNAPSHOT'
+
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    baseName = 'tdd-course-exercise-3'
+    version = project.version
+}
+
+dependencies {
+    testCompile("junit:junit:4.12")
+    testCompile("org.assertj:assertj-core:3.5.2")
+}
