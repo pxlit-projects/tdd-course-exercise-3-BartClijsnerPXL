@@ -3,11 +3,14 @@
 
 ## Technologie
 
-In PHP. Test Harnas met PHPUnit. [Zie ook PHPUnit documentatie](https://phpunit.de/manual/current/en/index.html).
+In Java. Test Harnas met [JUnit](https://github.com/junit-team/junit4/wiki/Getting-started). Assertions met [AssertJ](http://joel-costigliola.github.io/assertj/).
+
 
 ## Opdracht beschrijving
 
 Werk story per story af, test first!
+
+Commit (en push) per story!
 
 ### Story 1: simpele spreadsheet
 
@@ -35,12 +38,12 @@ Werk story per story af, test first!
     - Simpele berekeningen =3+5, =5-3, =4*2
     - Complexe berekeningen =7*(2+3)*((((2+1))))
 
-Tip: berekeningn zoals hierboven hoef je niet zelf te proberen evalueren. Hiervoor kan je De Nashorn JS engine in Java 8 gebruiken:
+Tip: berekeningen zoals hierboven hoef je niet zelf te proberen evalueren. Hiervoor kan je de _Nashorn JS_ engine in Java 8 gebruiken:
 
 ```java
 ScriptEngineManager factory = new ScriptEngineManager();
-    ScriptEngine engine = factory.getEngineByName("nashorn");
-    engine.eval('4 + 5');
+ScriptEngine engine = factory.getEngineByName("nashorn");
+engine.eval('4 + 5');
 ```
 
 Het spreekt voor zich dat hier testen op zijn plaats zijn.
