@@ -5,7 +5,8 @@ Oefeningen voor http://wgroeneveld.github.io/tdd-course
 
 ## Technologie
 
-In Java. Test Harnas met [JUnit](https://github.com/junit-team/junit4/wiki/Getting-started). Assertions met [AssertJ](http://joel-costigliola.github.io/assertj/).
+Liefst in Java. Test Harnas met [JUnit](https://github.com/junit-team/junit4/wiki/Getting-started). Assertions met [AssertJ](http://joel-costigliola.github.io/assertj/).
+Andere talen zijn ook beschikbaar, zie submapjes. 
 
 
 ## Opdracht beschrijving
