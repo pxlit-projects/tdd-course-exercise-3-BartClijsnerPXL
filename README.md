@@ -59,10 +59,11 @@ engine.eval('4 + 5');
 
 In Javascript is dat gewoon een kwestie van `eval()`.
 
-In C# kan je hiervoor dit gebruiken:
+In C# kan je hiervoor JScript gebruiken (toevegen aan assemblies):
 
 ```C#
-ScriptEngine.Eval("jscript", "1+2/3")
+var engine = Microsoft.JScript.Vsa.VsaEngine.CreateEngine();
+var result = Microsoft.JScript.Eval.JScriptEvaluate("3+4", engine);
 ```
 
 Het spreekt voor zich dat hier testen op zijn plaats zijn.
