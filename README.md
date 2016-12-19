@@ -57,6 +57,14 @@ ScriptEngine engine = factory.getEngineByName("nashorn");
 engine.eval('4 + 5');
 ```
 
+In Javascript is dat gewoon een kwestie van `eval()`.
+
+In C# kan je hiervoor dit gebruiken:
+
+```C#
+ScriptEngine.Eval("jscript", "1+2/3")
+```
+
 Het spreekt voor zich dat hier testen op zijn plaats zijn.
 
 ### Story 4: Formule fouten opvangen
