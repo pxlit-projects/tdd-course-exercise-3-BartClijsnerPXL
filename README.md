@@ -26,9 +26,11 @@ Er zijn **geen testen voorzien** - je zal je beste beentje moeten voor zetten...
 - Onbeperkt aantal rijen/kolommen
 - Rij = Cijfer 1 -> 9999...
 - Kolom = Letter A -> Z, AA -> ZZ, ...
-- Cellen zijn standaard leeg ("")
+- Cellen zijn standaard een lege waarde ("", niet `null` of `undefined`)
 - Cellen kunnen tekst opslaan
 - Mogelijk om inhoud van cel uit te lezen
+
+Denk aan je eindgebruikers. Een "" is duidelijker dan `null`! 
 
 ### Story 2: numerics & literal values
 
