@@ -46,12 +46,22 @@ public class SpreadSheetTest {
     public void getCell_with_column_index_2A_should_throw_exception () throws Exception {
         sheet.getCell(4,"2A");
     }
-//
-//    @Test
-//    public void cell_value_default_empty () throws Exception {
-//        Cell cell = sheet.getCell(4,"B");
-//        assertThat(cell.getValue ()).isEqualTo ("");
-//    }
 
+    @Test
+    public void cell_value_default_empty () throws Exception {
+        Cell cell = new Cell();
+        assertThat(cell.getValue ()).isEqualTo ("");
+    }
 
+    @Test
+    public void cell_with_initial_value () throws Exception {
+        Cell cell = new Cell("Some value");
+        assertThat(cell.getValue()).isEqualTo ("Some value");
+    }
+    @Test
+    public void cell_should_be_able_to_set_value () throws Exception {
+        Cell cell = new Cell();
+        cell.setValue ("Some value");
+        assertThat(cell.getValue()).isEqualTo ("Some value");
+    }
 }
